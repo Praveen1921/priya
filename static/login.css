@@ -1,8 +1,20 @@
- body {
+ /* body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f0f8ff;
+    } */
+
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('../static/images/img\ 1.jpeg'); /* ✅ Your image path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
     }
+
 
     header {
       background-color: #003366;
