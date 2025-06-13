@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Placement Tracker - Admin</title>
+  <link rel="stylesheet" href="../static/admin.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Placement Tracker Admin</div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('student_profile') }}">Student Management</a></li>
+        <li><a href="{{ url_for('login') }}">Admin</a></li>
+        <li><a href="{{ url_for('register') }}">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Student Records Table -->
+      <section class="card">
+        <h2>Student Records</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Company</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in records %}
+            <tr>
+              <td>{{ row[0] }}</td>
+              <td>{{ row[1] }}</td>
+              <td>{{ row[2] }}</td>
+              <td>{{ row[3] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Placement Statistics Section -->
+      <section class="card">
+        <h2>Placement Stats</h2>
+        <p>Students Placed: <strong>{{ placed }}</strong></p>
+        <p>Companies Visited: <strong>{{ companies }}</strong></p>
+        <p>Upcoming Interviews: <strong>{{ interviews }}</strong></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: placement@campus.edu | Phone: +91-9876543210</p>
+    <p>&copy; 2025 Placement Tracker System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

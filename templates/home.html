@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Tracker System</title>
+  <link rel="stylesheet" href="../static/home.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Student Management</div>
+  <nav>
+  <ul>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('student_profile') }}">Student Management</a></li>
+    <li><a href="{{ url_for('login') }}">Admin</a></li>
+    <li><a href="{{ url_for('register') }}">Register</a></li>
+
+  </ul>
+</nav>
+
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to the Placement Tracker System</h1>
+    <p>Track placements, manage student data, and analyze performance with ease.</p>
+    <a href="/login" class="btn">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <a href="/student"><b>Student Management</b></a>
+      <p>View and update student profiles and placement details.</p>
+    </div>
+    <div class="feature-box">
+      <a href="/suthan"><b>Company Records</b></a>
+      <p>Maintain a database of recruiting companies and roles offered.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Analytics</h2>
+      <p>Generate placement reports and success metrics.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Placement Tracker System. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
