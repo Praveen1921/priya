@@ -1,0 +1,136 @@
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      margin: 0;
+      background-size: cover;
+      justify-content: cover;
+      padding: 0;
+    }
+
+    /* ========== PAGE TITLE ========== */
+    .main-title {
+      text-align: center;
+      padding: 25px 15px 10px;
+      font-size: 32px;
+      color: white;
+      background-color: #1565c0;
+      font-weight: bold;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    /* ========== FORM CONTAINER ========== */
+    .form-container {
+      max-width: 600px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+      margin: 40px auto;
+      transition: transform 0.3s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, select:focus {
+      border-color: #00b4d8;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005f87;
+      transform: scale(1.03);
+    }
+
+    /* ========== FOOTER STYLES ========== */
+    footer {
+      background: #023e8a;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 25px;
+        margin: 20px;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+  
