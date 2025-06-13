@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Placement Drive Registration</title>
+  <link rel="stylesheet" href="/static/regg.css">
+<body>
+</head>
+ <!-- ========== PAGE TITLE OUTSIDE HEADER ========== -->
+<!-- ========== PAGE TITLE OUTSIDE HEADER ========== --
+
+<!-- ========== IMPROVED HEADER ========== -->
+<header>
+  <div class="logo">Campus Placement Portal</div>
+     <nav>
+  <ul>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('student_profile') }}">Student Management</a></li>
+    <li><a href="{{ url_for('login') }}">Admin</a></li>
+    <li><a href="{{ url_for('register') }}">Register</a></li>
+
+  </ul>
+</nav>
+
+</header>
+
+  <!-- ========== FORM ========== -->
+  <div class="form-container">
+    <h2>Placement Drive Registration</h2>
+    <form action="/register" method="post">
+      <label for="studentid">Student ID</label>
+      <input type="text" id="studentid" name="studentid" placeholder="e.g. STU2025001" required>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+
+      <label for="department">Department</label>
+      <select id="department" name="department" required>
+        <option value="">-- Select Department --</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="MECH">MECH</option>
+      </select>
+
+      <label for="year">Graduation Year</label>
+      <input type="number" id="year" name="year" min="2023" max="2030" placeholder="e.g. 2025" required>
+        <label for="studentid">Company</label>
+      <input type="text" id="Company" name="Company" placeholder="eg.Infosys" required> 
+
+      <!-- <label for="company">Company</label>
+      
+      <select id="company" name="company" required>
+        <option value="">-- Select Company --</option>
+        <option value="TCS">TCS</option>
+        <option value="Infosys">Infosys</option>
+        <option value="Wipro">Wipro</option>
+        <option value="Capgemini">Capgemini</option>
+        <option value="HCL">HCL</option>
+      </select> -->
+
+      <label for="status">Status</label>
+      <select id="status" name="status" required>
+        <option value="">-- Select Status --</option>
+        <option value="Registered">Registered</option>
+        <option value="Placed">Placed</option>
+        <option value="Not Placed">Not Placed</option>
+      </select>
+
+      <input type="submit" value="Register Now">
+    </form>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>Contact: placement@campus.edu | Phone: +91-9876543210</p>
+    <p>&copy; 2025 Campus Placement Portal. All rights reserved.</p>
+    <p>Developed by Placement Cell Team</p>
+  </footer>
+
+</body>
+</html>

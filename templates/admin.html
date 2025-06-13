@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Tracker - Admin</title>
+    <link rel="stylesheet" href="../static/ad.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Placement Tracker Admin</div>
+    </header>
+
+   <nav>
+  <ul>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('student_profile') }}">Student Management</a></li>
+    <li><a href="{{ url_for('login') }}">Admin</a></li>
+    <li><a href="{{ url_for('register') }}">Register</a></li>
+
+  </ul>
+</nav>
+
+
+    <main>
+        <div class="container">
+            <section class="card">
+                <h2>Student Records</h2>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Company</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Aryan Kumar</td>
+                        <td>Computer Science</td>
+                        <td>Google</td>
+                        <td>Placed</td>
+                    </tr>
+                    <tr>
+                        <td>Sneha Rao</td>
+                        <td>Electronics</td>
+                        <td>Intel</td>
+                        <td>Interview Scheduled</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>Placement Stats</h2>
+                <p>Students Placed: <strong>120</strong></p>
+                <p>Companies Visited: <strong>30</strong></p>
+                <p>Upcoming Interviews: <strong>15</strong></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Placement Tracker System</p>
+    </footer>
+</body>
+</html>
